@@ -7,10 +7,10 @@ const gallery = document.querySelector('.gallery');
 
 const galleryItems = images.map(({ preview, original, description }) => {
   return `
-		<li class="gallery-item">
-			<a class="gallery-link" href="${original}">
+		<li class="gallery__item">
+			<a class="gallery__link" href="${original}">
 			  <img
-				class="gallery-image"
+				class="gallery__image"
 				src="${preview}"
 				data-source="${original}"
 				alt="${description}"
